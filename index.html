@@ -1,30 +1,297 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>Hockey</title>
-    <!-- CSS style -->
-    <style>
-
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link
+            href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css"
+            rel="stylesheet" type="text/css" />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
+            rel="stylesheet">
+        <title>Hockey</title>
+        <!-- CSS style -->
+        <style>
+        .font-manrope{
+            font-family: 'Manrope', sans-serif;
+        }
     </style>
-    
-    <!-- Tailwind style -->
-    <script>
+
+        <!-- Tailwind style -->
+        <script>
         tailwind.config = {
           theme: {
             extend: {
               colors: {
                 clifford: '#da373d',
+                'title-text': '#131318',
+                'p-text': '#13131899',
               }
             }
           }
         }
       </script>
-</head>
-<body>
-    
-</body>
+    </head>
+    <body class="font-manrope">
+        <header class="lg:container mx-auto px-4">
+            <!-- Navigation -->
+            <nav class="my-14">
+                <div class="navbar">
+                    <div class="navbar-start">
+                        <div class="dropdown">
+                            <div tabindex="0" role="button"
+                                class="btn btn-ghost lg:hidden">
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    class="h-5 w-5" fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke="currentColor"><path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="2"
+                                        d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                            </div>
+                            <ul tabindex="0"
+                                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-base font-normal text-p-text">
+                                <li><a><span
+                                            class="text-[#FF4240]">Home</span></a></li>
+                                <li><a>About</a></li>
+                                <li><a>Pages</a></li>
+                                <li><a>Blog</a></li>
+                                <li><a>Contact</a></li>
+                            </ul>
+                        </div>
+                        <a
+                            class="btn-ghost text-xl lg:text-4xl font-extrabold text-title-text">Hockey<span
+                                class="text-[#FF4240]">’</span>s</a>
+                    </div>
+                    <div class="navbar-center hidden lg:flex">
+                        <ul
+                            class="menu menu-horizontal px-1 text-base font-normal text-p-text">
+                            <li><a><span
+                                        class="text-[#FF4240]">Home</span></a></li>
+                            <li><a>About</a></li>
+                            <li><a>Pages</a></li>
+                            <li><a>Blog</a></li>
+                            <li><a>Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="navbar-end">
+                        <button class="btn btn-ghost ml-6">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="h-5 w-5 hidden lg:flex" fill="none"
+                                viewBox="0 0 24 24" stroke="#89898B"><path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round" stroke-width="2"
+                                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+                        </button>
+                        <a
+                            class="btn bg-[#FF4240] text-xl font-bold text-[#fff]">Get
+                            Ticket</a>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Banner -->
+            <section class>
+                <div>
+                    <div class="carousel w-full">
+                        <div id="slide1"
+                            class="carousel-item relative w-full border-2 border-red">
+                            <img src="Images/1.png" class="w-full" />
+                            <div
+                                class="absolute flex gap-5 lg:gap-4 transform -translate-y-1/2 left-1/2 lg:left-8 -ml-14 lg:-ml-0 -bottom-5 lg:bottom-8">
+                                <a href="#slide4"
+                                    class="btn btn-circle bg-black text-white hover:text-black hover:bg-gray-600 ">❮</a>
+                                <a href="#slide2"
+                                    class="btn btn-circle bg-black text-white hover:text-black hover:bg-gray-600 ">❯</a>
+                            </div>
+                        </div>
+                        <div id="slide2" class="carousel-item relative w-full">
+                            <img src="Images/1.1.png" class="w-full" />
+                            <div
+                                class="absolute flex gap-5 lg:gap-4 transform -translate-y-1/2 left-1/2 lg:left-8 -ml-14 lg:-ml-0 -bottom-5 lg:bottom-8">
+                                <a href="#slide1"
+                                    class="btn btn-circle bg-black text-white hover:text-black hover:bg-gray-600">❮</a>
+                                <a href="#slide3"
+                                    class="btn btn-circle bg-black text-white hover:text-black hover:bg-gray-600">❯</a>
+                            </div>
+                        </div>
+                        <div id="slide3" class="carousel-item relative w-full">
+                            <img src="Images/1.2.png" class="w-full" />
+                            <div
+                                class="absolute flex gap-5 lg:gap-4 transform -translate-y-1/2 left-1/2 lg:left-8 -ml-14 lg:-ml-0 -bottom-5 lg:bottom-8">
+                                <a href="#slide2"
+                                    class="btn btn-circle bg-black text-white hover:text-black hover:bg-gray-600">❮</a>
+                                <a href="#slide4"
+                                    class="btn btn-circle bg-black text-white hover:text-black hover:bg-gray-600">❯</a>
+                            </div>
+                        </div>
+                        <div id="slide4" class="carousel-item relative w-full">
+                            <img src="Images/1.3.png" class="w-full" />
+                            <div
+                                class="absolute flex gap-5 lg:gap-4 transform -translate-y-1/2 left-1/2 lg:left-8 -ml-14 lg:-ml-0 -bottom-5 lg:bottom-8">
+                                <a href="#slide3"
+                                    class="btn btn-circle bg-black text-white hover:text-black hover:bg-gray-600">❮</a>
+                                <a href="#slide1"
+                                    class="btn btn-circle bg-black text-white hover:text-black hover:bg-gray-600">❯</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </header>
+
+
+        <main class="lg:container mx-auto px-4">
+            <!-- Section-Hockey Club -->
+            <section class="my-28">
+                <div
+                    class="p-8 text-center space-y-5 border-y border-dashed border-[#13131833]">
+                    <h1
+                        class="text-4xl font-extrabold text-title-text">Professional
+                        Hockeys Club</h1>
+                    <p class="text-base font-medium text-p-text max-w-2xl mx-auto">Dit amet
+                        consectetur. Condimentum dignissim adipiscing aliquam
+                        turpis placerat dolor. Purus urna in sit nullam proin.
+                    </p>
+                </div>
+                <div class=" px-12 my-12 grid grid-cols-1 lg:grid-cols-4 gap-8">
+                    <div class="flex flex-col items-center justify-center text-center space-y-2">
+                        <div class="radial-progress text-[#FF4240]"
+                            style="--value:87; --size:8rem; --thickness:13px;"
+                            role="progressbar"><h1
+                            class="text-3xl font-extrabold text-title-text">87%</h1></div>
+                        <h1 class="text-xl font-semibold text-title-text">Prayer Facility</h1>
+                        <p class="text-base font-normal text-p-text">Amet consectetur. Condimentum dignissim adipiscing
+                            .</p>
+                    </div>
+                    <div class="flex flex-col items-center justify-center text-center space-y-2">
+                        <div class="radial-progress text-[#49D293]"
+                            style="--value:95; --size:8rem; --thickness:13px;"
+                            role="progressbar"><h1
+                            class="text-3xl font-extrabold text-title-text">95%</h1></div>
+                        <h1 class="text-xl font-semibold text-title-text">Experienced Coach</h1>
+                        <p class="text-base font-normal text-p-text">Amet consectetur. Condimentum dignissim adipiscing
+                            .</p>
+                    </div>
+                    <div class="flex flex-col items-center justify-center text-center space-y-2">
+                        <div class="radial-progress text-[#FFB546]"
+                            style="--value:90; --size:8rem; --thickness:13px;"
+                            role="progressbar"><h1
+                            class="text-3xl font-extrabold text-title-text">90%</h1></div>
+                        <h1 class="text-xl font-semibold text-title-text">Senior Player</h1>
+                        <p class="text-base font-normal text-p-text">Amet consectetur. Condimentum dignissim adipiscing
+                            .</p>
+                    </div>
+                    <div class="flex flex-col items-center justify-center text-center space-y-2">
+                        <div class="radial-progress text-[#4C8DF1]"
+                            style="--value:80; --size:8rem; --thickness:13px;"
+                            role="progressbar"><h1
+                            class="text-3xl font-extrabold text-title-text">80%</h1></div>
+                        <h1 class="text-xl font-semibold text-title-text">Training Ground</h1>
+                        <p class="text-base font-normal text-p-text">Amet consectetur. Condimentum dignissim adipiscing
+                            .</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section-Program -->
+            <section class="my-28">
+                <div
+                    class="p-8 text-center space-y-5 border-y border-dashed border-[#13131833]">
+                    <h1
+                        class="text-4xl font-extrabold text-title-text">Program Sections</h1>
+                    <p class="text-base font-medium text-p-text max-w-2xl mx-auto">Dit amet
+                        consectetur. Condimentum dignissim adipiscing aliquam
+                        turpis placerat dolor. Purus urna in sit nullam proin.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-2 gap-6">
+                    <div class="relative col-span-1">
+                        <div class="z-0">
+                            <img class="w-full" src="Images/2.png" alt="">
+                        </div>
+                        <div class="absolute bottom-0 space-y-5 p-10 max-w-full h-full w-full rounded-2xl bg-[#13131880]
+                        text- z-10 flex flex-col justify-end">
+                            <h1 class="text-3xl font-extrabold text-white">Junior Program</h1>
+                            <p class="max-w-xl text-base font-medium text-white">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit 
+                                enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.</p>
+                            <div><button class=" border-0 btn px-6 bg-[#FF4240] text-xl font-bold text-[#fff]">Register Now!</button></div>
+                        </div>
+                    </div>
+                    <div class="relative col-span-1">
+                        <div><img class="w-full" src="Images/3.png" alt=""></div>
+                        <div class="absolute bottom-0 space-y-5 p-10 max-w-full h-full w-full rounded-2xl bg-[#13131880]
+                        text- z-10 flex flex-col justify-end">
+                            <h1 class="text-3xl font-extrabold text-white">Junior Program</h1>
+                            <p class="max-w-xl text-base font-medium text-white">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit 
+                                enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.</p>
+                                <div><button class=" border-0 btn px-6 bg-[#FF4240] text-xl font-bold text-[#fff]">Register Now!</button></div>
+                        </div>
+                    </div>
+                    <div class="relative col-span-2">
+                        <div><img class="w-full" src="Images/4.png" alt=""></div>
+                        <div class="absolute bottom-0 space-y-5 p-10 max-w-full h-full w-full rounded-2xl bg-[#13131880]
+                        text- z-10 flex flex-col justify-end">
+                            <h1 class="text-3xl font-extrabold text-white">Junior Program</h1>
+                            <p class="max-w-2xl text-base font-medium text-white">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit 
+                                enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.</p>
+                                <div><button class=" border-0 btn px-6 bg-[#FF4240] text-xl font-bold text-[#fff]">Register Now!</button></div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section-Product -->
+            <section class="my-28">
+                <div
+                    class="p-8 text-center space-y-5 border-y border-dashed border-[#13131833]">
+                    <h1
+                        class="text-4xl font-extrabold text-title-text">Our New Products</h1>
+                    <p class="text-base font-medium text-p-text max-w-2xl mx-auto">Dit amet
+                        consectetur. Condimentum dignissim adipiscing aliquam
+                        turpis placerat dolor. Purus urna in sit nullam proin.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Section-Client Question -->
+            <section class="my-28">
+                <div
+                    class="p-8 text-center space-y-5 border-y border-dashed border-[#13131833]">
+                    <h1
+                        class="text-4xl font-extrabold text-title-text">Clients Question</h1>
+                    <p class="text-base font-medium text-p-text max-w-2xl mx-auto">Dit amet
+                        consectetur. Condimentum dignissim adipiscing aliquam
+                        turpis placerat dolor. Purus urna in sit nullam proin.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Section-Get In Touch -->
+            <section class="my-28">
+                <div
+                    class="p-8 text-center space-y-5 border-y border-dashed border-[#13131833]">
+                    <h1
+                        class="text-4xl font-extrabold text-title-text">Get In Touch</h1>
+                    <p class="text-base font-medium text-p-text max-w-2xl mx-auto">Dit amet
+                        consectetur. Condimentum dignissim adipiscing aliquam
+                        turpis placerat dolor. Purus urna in sit nullam proin.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Section-Social Media -->
+            <section class="my-28">
+
+            </section>
+        </main>
+        <footer>
+
+        </footer>
+    </body>
 </html>
