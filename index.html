@@ -41,7 +41,7 @@
     <body class="font-manrope">
         <header class="lg:container mx-auto px-4 lg:px-0">
             <!-- Navigation -->
-            <nav class="my-1 lg:my-14">
+            <nav class="my-1 lg:my-8">
                 <div class="navbar p-0 ">
                     <div class="navbar-start">
                         <div class="dropdown">
@@ -98,7 +98,7 @@
 
             <!-- Banner -->
             <section class>
-                <div>
+                <div class="relative">
                     <div class="carousel w-full">
                         <div id="slide1"
                             class="carousel-item relative w-full ">
@@ -142,6 +142,11 @@
                             </div>
                         </div>
                     </div>
+
+                    <div class="text-white p-4 lg:p-8 bg-[#131318] static lg:absolute max-w-lg rounded-2xl right-8 bottom-8 mt-2 lg:mt-0">
+                        <h1 class="text-lg lg:text-2xl font-extrabold">Meet all the heroes from the field</h1>
+                        <p class="text-sm lg:text-base font-medium text-[#FFFFFF99]">Explore inspiring stories of triumph, dedication, and skill. Join us in celebrating greatness on and off the field.</p>
+                    </div>
                 </div>
             </section>
         </header>
@@ -152,7 +157,7 @@
                 <div
                     class="p-8 text-center space-y-5 border-y border-dashed border-[#13131833]">
                     <h1
-                        class="text-2xl lg:text-4xl font-extrabold text-title-text">Professional
+                        class="text-xl lg:text-4xl font-extrabold text-title-text">Professional
                         Hockeys Club</h1>
                     <p
                         class="text-base font-medium text-p-text max-w-2xl mx-auto">Elevate your game with our Professional Hockey Club. Join a community of excellence, where skill meets opportunity on the grand stage.
@@ -216,11 +221,11 @@
                     </p>
                 </div>
                 <!-- Program Catalog -->
-                <div class="grid grid-cols-1 gap-6 my-12">
-                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                <div class="grid grid-cols-1 gap-6 my-12 grid-rows-3">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 row-span-2 lg:row-span-1 gap-6">
 
                         <!-- Program-01 -->
-                        <div class="relative col-span-1">
+                        <div class="relative col-span-1 row-span-1">
                             <div class="z-0">
                                 <img class="w-full" src="Images/2.png" alt>
                             </div>
@@ -239,7 +244,7 @@
                         </div>
 
                         <!-- Program-02 -->
-                        <div class="relative col-span-1">
+                        <div class="relative col-span-1 row-span-1">
                             <div><img class="w-full" src="Images/3.png"
                                     alt></div>
                             <div
@@ -257,11 +262,11 @@
                         </div>
                     </div>
 
-                    <div class="grid grid-cols-1">
-                        <!-- Program-03 -->
+                    <div class="grid grid-cols-1 h-full row-span-1 lg:row-span-2">
 
-                        <div class="relative col-span-1">
-                            <div class><img class="w-full" src="Images/4.png"
+                        <!-- Program-03 -->
+                        <div class="relative col-span-1 max-h-full border-2 border-red-500 row-span-1 lg:row-span-2">
+                            <div class="h-full"><img class="w-full h-full" src="Images/4.png"
                                     alt></div>
                             <div
                                 class="absolute bottom-0 space-y-2 lg:space-y-5 p-4 lg:p-10 max-w-full h-full w-full rounded-2xl bg-[#13131880]
@@ -698,6 +703,7 @@
                 </div>
             </section>
         </main>
+
         <footer class="bg-[#131318] text-[#FFFFFF99] text-base font-medium">
             <div class="lg:container mx-auto">
                 <div class="py-5 lg:py-28 grid grid-cols-2 lg:grid-cols-5 gap-20 lg:gap-36 px-4 lg:px-0 ">
